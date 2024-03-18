@@ -1,0 +1,72 @@
+.phonebook {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  height: fit-content;
+  width: fit-content;
+  overflow: hidden;
+  padding: 30px;
+  transition: transform 0.35s ease-in-out;
+}
+
+.phonebook:has(form:focus-within) {
+  transform: scale(1.05);
+}
+
+.phonebook:has(form:focus-within) > h2 {
+  color: rgb(76, 186, 80);
+}
+
+.phonebook:hover {
+  transform: scale(1.05);
+}
+
+.phonebook h2 {
+  text-align: center;
+  text-decoration: underline;
+  transition: color 0.35s ease-in-out;
+}
+
+.phonebook form {
+  display: flex;
+  flex-direction: column;
+}
+
+.phonebook label {
+  font-size: 17px;
+  color: #757575;
+  margin-bottom: 3px;
+  transition: color 0.35s ease-in-out;
+  text-transform: capitalize;
+}
+
+.phonebook input {
+  font-size: 17px;
+  padding: 10px 15px;
+  margin-bottom: 17px;
+  border-radius: 4px;
+  border: 1px solid #21212133;
+  outline: none;
+  color: #212121;
+  transition: border-color 0.35s ease-in-out;
+}
+
+.phonebook input:focus {
+  border-color: rgb(76, 186, 80);
+}
+
+.phonebook label:has(+ input:focus) {
+  color: rgb(76, 186, 80);
+}
+
+.authSection {
+  display: flex;
+  justify-content: center;
+}
+
+.authSection h2 {
+  text-decoration: none;
+}

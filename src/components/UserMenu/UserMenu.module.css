@@ -1,0 +1,51 @@
+.userMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+.userMenu p {
+  font-size: 18px;
+  display: flex;
+  gap: 5px;
+}
+
+.userMenu p span {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.userMenu button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: lightcoral;
+  color: white;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.75) 2px 2px 5px 0px;
+  opacity: 1;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+}
+
+.userMenu button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.userMenu button:active {
+  opacity: 0, 8;
+  color: black;
+  transform: scale(1.07);
+}
+
+@media (max-width: 700px) {
+  .userMenu p {
+    flex-direction: column;
+    align-items: center;
+  }
+}

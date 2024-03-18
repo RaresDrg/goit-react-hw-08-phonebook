@@ -1,0 +1,52 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  height: fit-content;
+  overflow: hidden;
+  padding: 30px;
+  transition: transform 0.35s ease-in-out;
+}
+
+.contacts:hover {
+  transform: scale(1.05);
+}
+
+.contacts:has(input:focus) {
+  transform: scale(1.05);
+}
+
+.contacts:has(input:focus) > h2 {
+  color: rgb(76, 186, 80);
+}
+
+.contacts h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 40px;
+  transition: color 0.35s ease-in-out;
+}
+
+.contacts label {
+  font-size: 17px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contacts input {
+  font-size: 17px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #21212133;
+  outline: none;
+  color: #212121;
+  transition: border-color 0.35s ease-in-out;
+}
+
+.contacts input:focus {
+  border-color: rgb(76, 186, 80);
+}
